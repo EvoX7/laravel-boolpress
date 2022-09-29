@@ -215,7 +215,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_MainContent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/MainContent.vue */ "./resources/js/components/MainContent.vue");
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'MainContent',
   components: {
     MainContent: _components_MainContent_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
@@ -260,13 +259,6 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
-};
-
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
   return _c("header", [_c("nav", {
     staticClass: "navbar navbar-expand-lg navbar-dark bg-primary container"
   }, [_c("a", {
@@ -274,7 +266,56 @@ var staticRenderFns = [function () {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("BoolPress")]), _vm._v(" "), _c("button", {
+  }, [_vm._v("BoolPress")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "collapse navbar-collapse",
+    attrs: {
+      id: "navbarNav"
+    }
+  }, [_c("ul", {
+    staticClass: "navbar-nav"
+  }, [_c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link font-weight-bold",
+    attrs: {
+      to: "/home"
+    }
+  }, [_vm._v("Home")])], 1), _c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link font-weight-bold",
+    attrs: {
+      to: "/categories"
+    }
+  }, [_vm._v("Categories")])], 1), _c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link font-weight-bold",
+    attrs: {
+      to: "/tags"
+    }
+  }, [_vm._v("Tags")])], 1), _vm._v(" "), _c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link font-weight-bold",
+    attrs: {
+      to: "/contacts"
+    }
+  }, [_vm._v("Contacts")])], 1), _vm._v(" "), _c("li", {
+    staticClass: "nav-item"
+  }, [_c("router-link", {
+    staticClass: "nav-link font-weight-bold",
+    attrs: {
+      to: "/about"
+    }
+  }, [_vm._v("About")])], 1)])])])]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("button", {
     staticClass: "navbar-toggler",
     attrs: {
       type: "button",
@@ -286,37 +327,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("span", {
     staticClass: "navbar-toggler-icon"
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "collapse navbar-collapse",
-    attrs: {
-      id: "navbarNav"
-    }
-  }, [_c("ul", {
-    staticClass: "navbar-nav"
-  }, [_c("li", {
-    staticClass: "nav-item active"
-  }, [_c("a", {
-    staticClass: "nav-link font-weight-bold",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Home "), _c("span", {
-    staticClass: "sr-only"
-  }, [_vm._v("(current)")])])]), _vm._v(" "), _c("li", {
-    staticClass: "nav-item"
-  }, [_c("a", {
-    staticClass: "nav-link font-weight-bold",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Contacts")])]), _vm._v(" "), _c("li", {
-    staticClass: "nav-item"
-  }, [_c("a", {
-    staticClass: "nav-link font-weight-bold",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("About")])])])])])]);
+  })]);
 }];
 render._withStripped = true;
 
@@ -424,7 +435,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div");
+  return _c("h1", [_vm._v("About")]);
 };
 
 var staticRenderFns = [];
@@ -448,7 +459,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div");
+  return _c("h1", [_vm._v("Contacts")]);
 };
 
 var staticRenderFns = [];
@@ -496,7 +507,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("HeaderHome"), _vm._v(" "), _c("h1", [_vm._v("Hello")])], 1);
+  return _c("div", [_c("HeaderHome"), _vm._v(" "), _c("router-view")], 1);
 };
 
 var staticRenderFns = [];
@@ -536,7 +547,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-1324358a] {\r\n  width: 20rem;\n}\r\n", ""]);
+exports.push([module.i, "\n.card[data-v-1324358a] {\r\n  width: 25rem;\n}\r\n", ""]);
 
 // exports
 
@@ -17037,13 +17048,17 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
   routes: [{
-    path: '/',
+    path: '/home',
     name: 'home',
     component: _pages_HomePage__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
-    path: '/about',
-    name: 'about',
-    component: _pages_AboutHome__WEBPACK_IMPORTED_MODULE_3__["default"]
+    path: '/categories',
+    name: 'categories',
+    component: CategoriesHome
+  }, {
+    path: '/tags',
+    name: 'tags',
+    component: TagsHome
   }, {
     path: '/contacts',
     name: 'contacts',

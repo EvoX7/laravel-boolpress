@@ -1,6 +1,7 @@
 <template>
   <div>
     <MainContent />
+
   </div>
 </template>
 
@@ -8,7 +9,6 @@
 import MainContent from "../components/MainContent.vue";
 
 export default {
-  name: 'MainContent',
   components: {
     MainContent,
   },

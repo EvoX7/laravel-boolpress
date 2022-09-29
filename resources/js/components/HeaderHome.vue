@@ -23,16 +23,28 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link font-weight-bold" href="#"
-              >Home <span class="sr-only">(current)</span></a
+          <li class="nav-item">
+            <router-link class="nav-link font-weight-bold" to="/home"
+              >Home</router-link
+            >
+            <li class="nav-item">
+            <router-link class="nav-link font-weight-bold" to="/categories"
+              >Categories</router-link
+            >
+            <li class="nav-item">
+            <router-link class="nav-link font-weight-bold" to="/tags"
+              >Tags</router-link
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#">Contacts</a>
+            <router-link class="nav-link font-weight-bold" to="/contacts"
+              >Contacts</router-link
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#">About</a>
+            <router-link class="nav-link font-weight-bold" to="/about"
+              >About</router-link
+            >
           </li>
         </ul>
       </div>

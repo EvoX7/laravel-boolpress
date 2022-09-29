@@ -11,14 +11,19 @@ const router = new VueRouter({
     mode: 'history',
     routes: [
         {
-            path: '/',
+            path: '/home',
             name: 'home',
             component: HomePage
         },
         {
-            path: '/about',
-            name: 'about',
-            component: AboutHome
+            path: '/categories',
+            name: 'categories',
+            component: CategoriesHome
+        },
+        {
+            path: '/tags',
+            name: 'tags',
+            component: TagsHome
         },
         {
             path: '/contacts',
