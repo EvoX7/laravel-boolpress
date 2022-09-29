@@ -1,7 +1,9 @@
+import Vue from 'vue'
+
 window.Vue = require('vue');
 
 import App from './views/App';
-import Vue from 'vue'
+
 import VueRouter from 'vue-router'
 import router from './router';
 Vue.use(VueRouter)
