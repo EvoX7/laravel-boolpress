@@ -1,7 +1,9 @@
 <template>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
-      <a class="navbar-brand font-weight-bold" href="#">BoolPress</a>
+      <h2><router-link class="font-weight-bold text-white text-decoration-none mx-4" to="/home"
+              >BoolPress</router-link
+            ></h2>
       <!-- <img
         src="/docs/4.6/assets/brand/bootstrap-solid.svg"
         width="30"
@@ -24,25 +26,25 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link font-weight-bold" to="/home"
+            <router-link class="nav-link font-weight-bold text-white" to="/home"
               >Home</router-link
             >
             <li class="nav-item">
-            <router-link class="nav-link font-weight-bold" to="/categories"
+            <router-link class="nav-link font-weight-bold text-white" to="/categories"
               >Categories</router-link
             >
             <li class="nav-item">
-            <router-link class="nav-link font-weight-bold" to="/tags"
+            <router-link class="nav-link font-weight-bold text-white" to="/tags"
               >Tags</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link font-weight-bold" to="/contacts"
+            <router-link class="nav-link font-weight-bold text-white" to="/contacts"
               >Contacts</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link font-weight-bold" to="/about"
+            <router-link class="nav-link font-weight-bold text-white" to="/about"
               >About</router-link
             >
           </li>
@@ -57,7 +59,14 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+
 header {
   background-color: #3490dc;
 }
+
+.nav-link:hover {
+  // to force color over bootstrap rules
+color: black !important;  
+}
+
 </style>

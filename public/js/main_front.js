@@ -257,14 +257,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_PostCard_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/PostCard.vue */ "./resources/js/components/PostCard.vue");
-/* harmony import */ var _components_HeaderHome_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/HeaderHome.vue */ "./resources/js/components/HeaderHome.vue");
-
+/* harmony import */ var _components_HeaderHome_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/HeaderHome.vue */ "./resources/js/components/HeaderHome.vue");
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    HeaderHome: _components_HeaderHome_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    PostCard: _components_PostCard_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    HeaderHome: _components_HeaderHome_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 
@@ -287,12 +284,12 @@ var render = function render() {
 
   return _c("header", [_c("nav", {
     staticClass: "navbar navbar-expand-lg navbar-dark bg-primary container"
-  }, [_c("a", {
-    staticClass: "navbar-brand font-weight-bold",
+  }, [_c("h2", [_c("router-link", {
+    staticClass: "font-weight-bold text-white text-decoration-none mx-4",
     attrs: {
-      href: "#"
+      to: "/home"
     }
-  }, [_vm._v("BoolPress")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("div", {
+  }, [_vm._v("BoolPress")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("div", {
     staticClass: "collapse navbar-collapse",
     attrs: {
       id: "navbarNav"
@@ -302,35 +299,35 @@ var render = function render() {
   }, [_c("li", {
     staticClass: "nav-item"
   }, [_c("router-link", {
-    staticClass: "nav-link font-weight-bold",
+    staticClass: "nav-link font-weight-bold text-white",
     attrs: {
       to: "/home"
     }
   }, [_vm._v("Home")])], 1), _c("li", {
     staticClass: "nav-item"
   }, [_c("router-link", {
-    staticClass: "nav-link font-weight-bold",
+    staticClass: "nav-link font-weight-bold text-white",
     attrs: {
       to: "/categories"
     }
   }, [_vm._v("Categories")])], 1), _c("li", {
     staticClass: "nav-item"
   }, [_c("router-link", {
-    staticClass: "nav-link font-weight-bold",
+    staticClass: "nav-link font-weight-bold text-white",
     attrs: {
       to: "/tags"
     }
   }, [_vm._v("Tags")])], 1), _vm._v(" "), _c("li", {
     staticClass: "nav-item"
   }, [_c("router-link", {
-    staticClass: "nav-link font-weight-bold",
+    staticClass: "nav-link font-weight-bold text-white",
     attrs: {
       to: "/contacts"
     }
   }, [_vm._v("Contacts")])], 1), _vm._v(" "), _c("li", {
     staticClass: "nav-item"
   }, [_c("router-link", {
-    staticClass: "nav-link font-weight-bold",
+    staticClass: "nav-link font-weight-bold text-white",
     attrs: {
       to: "/about"
     }
@@ -602,7 +599,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "header[data-v-6d34f892] {\n  background-color: #3490dc;\n}", ""]);
+exports.push([module.i, "header[data-v-6d34f892] {\n  background-color: #3490dc;\n}\n.nav-link[data-v-6d34f892]:hover {\n  color: black !important;\n}", ""]);
 
 // exports
 
@@ -621,7 +618,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-1324358a] {\r\n  width: 25rem;\n}\r\n", ""]);
+exports.push([module.i, "\n.card[data-v-1324358a] {\r\n  width: 25rem;\r\n  height: 45rem;\n}\r\n", ""]);
 
 // exports
 
