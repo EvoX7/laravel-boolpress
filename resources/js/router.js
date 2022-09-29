@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import HomePage from './pages/HomePage';
+import CategoriesHome from './pages/CategoriesHome';
+import TagsHome from './pages/TagsHome';
 import AboutHome from './pages/AboutHome';
 import ContactsHome from './pages/ContactsHome';
 
@@ -24,6 +26,11 @@ const router = new VueRouter({
             path: '/tags',
             name: 'tags',
             component: TagsHome
+        },
+        {
+            path: '/about',
+            name: 'about',
+            component: AboutHome
         },
         {
             path: '/contacts',
