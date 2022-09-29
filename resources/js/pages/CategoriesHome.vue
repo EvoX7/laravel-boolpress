@@ -1,13 +1,19 @@
 <template>
-  <h1>Categories</h1>
+<div>
+  <CategoriesIndex />
+</div>
+ 
 </template>
 
 <script>
-export default {
+import CategoriesIndex from "../components/CategoriesIndex.vue";
 
-}
+export default {
+  components: {
+    CategoriesIndex,
+  },
+};
 </script>
 
 <style>
-
 </style>

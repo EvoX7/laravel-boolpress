@@ -1,11 +1,18 @@
 <template>
-<h1>Tags</h1>
+<div>
+<TagsIndex />
+
+</div>
 </template>
 
 <script>
-export default {
+import TagsIndex from "../components/TagsIndex.vue";
 
-}
+export default {
+  components: {
+    TagsIndex,
+  },
+};
 </script>
 
 <style>
