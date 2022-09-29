@@ -6,13 +6,13 @@ Vue.use(VueRouter)
 
 import HomePage from './pages/HomePage';
 import AboutHome from './pages/AboutHome';
-import Contacts from './pages/Contacts';
+import ContactsHome from './pages/ContactsHome';
 
 const router = new VueRouter({
     mode: 'history',
     routes: [
         {
-            path: '/',
+            path: '/home',
             name: 'home',
             component: HomePage
         },
@@ -24,7 +24,7 @@ const router = new VueRouter({
         {
             path: '/contacts',
             name: 'contacts',
-            component: Contacts
+            component: ContactsHome
         },
     ]
 });
