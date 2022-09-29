@@ -37,6 +37,11 @@ const router = new VueRouter({
             name: 'contacts',
             component: ContactsHome
         },
+        // {
+        //     path: '/posts/:id',
+        //     name: 'post_show',
+        //     component: SinglePost
+        // },
     ]
 });
 

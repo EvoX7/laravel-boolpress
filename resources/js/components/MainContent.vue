@@ -11,6 +11,7 @@
 
 <script>
 import PostCard from "./PostCard.vue";
+import axios from 'axios';
 
 export default {
   components: {
@@ -38,18 +39,7 @@ export default {
           console.log(error);
         });
     },
-    getCategories() {
-      axios
-        .get("/api/categories")
-
-        .then((response) => {
-          console.log(response.data.results);
-          this.categories = response.data.results;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
+   
 
     getTags() {
       axios
@@ -66,7 +56,6 @@ export default {
   },
   created() {
     this.getAllPosts();
-    this.getCategories();
     this.getTags();
   },
 };

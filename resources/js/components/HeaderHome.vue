@@ -3,8 +3,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
       <img
         src="assets/img/bool_press_logo.png"
-        width="55"
-        height="50"
+        width="45"
+        height="40"
         class="d-inline-block align-top rounded"
         alt="logo"
       />

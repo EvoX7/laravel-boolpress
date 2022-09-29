@@ -7,10 +7,9 @@
           <table class="table table-dark mt-5">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">sdfds</th>
+                <th scope="col">fbgfg</th>
+                
               </tr>
             </thead>
             <tbody>
@@ -41,7 +40,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ['category'],
+
+};
 </script>
 
 <style>
