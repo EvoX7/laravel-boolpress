@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 import HomePage from './pages/HomePage';
 import CategoriesHome from './pages/CategoriesHome';
 import CategoryOnPosts from './pages/CategoryOnPosts';
+import TagOnPosts from './pages/TagOnPosts';
 import TagsHome from './pages/TagsHome';
 import AboutHome from './pages/AboutHome';
 import ContactsHome from './pages/ContactsHome';
@@ -32,6 +33,11 @@ const router = new VueRouter({
             path: '/tags',
             name: 'tags',
             component: TagsHome
+        },
+        {
+            path: '/tags/:id',
+            name: 'tagOnPosts',
+            component: TagOnPosts
         },
         {
             path: '/about',

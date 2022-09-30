@@ -1,13 +1,11 @@
 <template>
   <div>
-    <h1>All posts from a category</h1>
+    <h1>All posts from a tag</h1>
     <h1 class="text-center mt-5 mb-5"></h1>
     <div class="container">
       <div class="row justify-content-center">
-       <PostCard v-for="post in category.posts" :key="post.id" :post="post" />
+        <PostCard v-for="post in tag.posts" :key="post.id" :post="post" />
       </div>
-
-
     </div>
   </div>
 </template>
@@ -20,27 +18,24 @@ export default {
   components: {
     PostCard,
   },
-  props: {
-    post:Object,
-  },
 
   data: function () {
     return {
-      category: {
-      }
-
+      tag: {
+        post: "",
+      },
     };
   },
 
   methods: {
-    getCategory() {
+    getTag() {
       const id = this.$route.params.id;
       axios
-        .get(`/api/categories/${id}`)
+        .get(`/api/tags/${id}`)
 
         .then((response) => {
-          console.log(response.data.results.data);
-          this.category = response.data.results.data;
+          console.log(response.data.results.tag);
+          this.tag = response.data.results.tag;
         })
         .catch((error) => {
           console.log(error);
@@ -48,9 +43,8 @@ export default {
     },
   },
   created() {
-    this.getCategory();
-
-  }
+    this.getTag();
+  },
 };
 </script>
 

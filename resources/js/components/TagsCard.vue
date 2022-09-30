@@ -3,10 +3,10 @@
    <div class="col-12">
       <div class="card mt-3">
         <div class="card-header">
-          <h2 class="text-dark">{{ tagsCardEl.name }}</h2>
+          <h2 class="text-dark">#{{ tagsCardEl.name }}</h2>
         </div>
         <div class="card-body">
-          <router-link class="btn btn-dark" to="">Click to see related posts.</router-link>
+          <router-link class="btn btn-dark" :to="'tags/' +  tagsCardEl.id">Click to see related posts.</router-link>
         </div>
       </div>
  </div>

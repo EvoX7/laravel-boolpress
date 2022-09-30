@@ -6,7 +6,7 @@
           <h2 class="text-white">{{ cardEl.name }}</h2>
         </div>
         <div class="card-body">
-          <router-link class="btn btn-dark" to="">Click to see related posts.</router-link>
+          <router-link class="btn btn-dark" :to="'categories/' +  cardEl.id">Click to see related posts.</router-link>
         </div>
       </div>
  </div>
