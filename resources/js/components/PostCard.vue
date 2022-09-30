@@ -9,7 +9,7 @@
         <p class="card-text">{{ post.post_content }}</p>
 
         <h6 class="card-text">
-          <strong>Category: </strong>{{ post.category.name }}
+          <strong>Category: </strong>{{ post.category.name }} <span>{{ post.category.color }} </span>
         </h6>
 
         <div>

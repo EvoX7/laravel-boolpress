@@ -1,6 +1,6 @@
 <template>
 <div>
-<TagsIndex />
+
 
 </div>
 </template>

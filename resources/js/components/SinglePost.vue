@@ -10,8 +10,7 @@
 
 <script>
 import PostCard from "../components/PostCard.vue";
-import axios from 'axios';
-
+import axios from "axios";
 
 export default {
   components: {
@@ -26,7 +25,7 @@ export default {
 
   methods: {
     getPost() {
-        const id = this.$route.params.id;
+      const id = this.$route.params.id;
       axios
         .get(`api/posts/${id}`)
 
@@ -38,9 +37,6 @@ export default {
           console.log(error);
         });
     },
-  },
-  created() {
-    this.getPost();
   },
 };
 </script>

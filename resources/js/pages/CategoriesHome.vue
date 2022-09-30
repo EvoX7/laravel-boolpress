@@ -1,10 +1,5 @@
 <template>
   <div>
-    <CategoriesIndex
-      v-for="category in categories"
-      :key="category.id"
-      :category="category"
-    />
   </div>
 </template>
 
@@ -36,9 +31,6 @@ export default {
         .catch((error) => {
           console.log(error);
         });
-    },
-    created() {
-      this.getCategories();
     },
   },
 };

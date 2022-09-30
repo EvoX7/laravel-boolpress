@@ -13,7 +13,7 @@ const router = new VueRouter({
     mode: 'history',
     routes: [
         {
-            path: '/home',
+            path: ('/', '/home'),
             name: 'home',
             component: HomePage
         },
@@ -37,11 +37,6 @@ const router = new VueRouter({
             name: 'contacts',
             component: ContactsHome
         },
-        // {
-        //     path: '/posts/:id',
-        //     name: 'post_show',
-        //     component: SinglePost
-        // },
     ]
 });
 
