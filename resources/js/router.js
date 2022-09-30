@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 
 import HomePage from './pages/HomePage';
 import CategoriesHome from './pages/CategoriesHome';
+import CategoryOnPosts from './pages/CategoryOnPosts';
 import TagsHome from './pages/TagsHome';
 import AboutHome from './pages/AboutHome';
 import ContactsHome from './pages/ContactsHome';
@@ -21,6 +22,11 @@ const router = new VueRouter({
             path: '/categories',
             name: 'categories',
             component: CategoriesHome
+        },
+        {
+            path: '/categories/:id',
+            name: 'categoryOnPosts',
+            component: CategoryOnPosts
         },
         {
             path: '/tags',

@@ -3,7 +3,7 @@
     <h1 class="text-center mt-5 mb-5">Categories List</h1>
     <div class="container d-flex justify-content-center">
       <div class="row flex-column w-50 text-center">
-        <CategoriesTagsCard 
+        <CategoriesCard 
           v-for="category in categories"
           :key="category.id"
           :cardEl="category"
@@ -15,12 +15,12 @@
 
 <script>
 import axios from "axios";
-import CategoriesTagsCard from "../components/CategoriesTagsCard.vue";
+import CategoriesCard from "../components/CategoriesCard.vue";
 
 export default {
   name: "CategoriesHome",
   components: {
-    CategoriesTagsCard,
+    CategoriesCard,
   },
 
   data: function () {

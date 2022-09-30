@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -15,7 +16,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::with('posts')->get();
+        $categories = Category::all();
 
         return response()->json([
             'response' => true,
@@ -52,19 +53,19 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        $category = Category::find($id);
+    // public function show($id)
+    // {
+    //     $posts = Post::all()->where($category->id);
 
-        if ($category)
-            return response()->json([
-                'response' => true,
-                'results' => [
-                    'category' => $category
-                ]
-            ]);
-        return response('Sorry, page not found.', 404);
-    }
+    //     if ($posts)
+    //         return response()->json([
+    //             'response' => true,
+    //             'results' => [
+    //                 'category' => $category
+    //             ]
+    //         ]);
+    //     return response('Sorry, page not found.', 404);
+    // }
 
     /**
      * Show the form for editing the specified resource.
