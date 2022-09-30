@@ -1,16 +1,26 @@
 <template>
   <div>
+    <h1 class="text-center mt-5 mb-5">Categories List</h1>
+    <div class="container d-flex justify-content-center">
+      <div class="row flex-column w-50 text-center">
+        <CategoriesTagsCard 
+          v-for="category in categories"
+          :key="category.id"
+          :cardEl="category"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import CategoriesIndex from "../components/CategoriesIndex.vue";
-import axios from 'axios';
-
+import axios from "axios";
+import CategoriesTagsCard from "../components/CategoriesTagsCard.vue";
 
 export default {
+  name: "CategoriesHome",
   components: {
-    CategoriesIndex,
+    CategoriesTagsCard,
   },
 
   data: function () {
@@ -32,6 +42,9 @@ export default {
           console.log(error);
         });
     },
+  },
+  created() {
+    this.getCategories();
   },
 };
 </script>
